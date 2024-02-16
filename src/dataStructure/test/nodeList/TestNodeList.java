@@ -36,6 +36,16 @@ public class TestNodeList {
         printList(list);
     }
 
+    @Test
+    public void check_pop() {
+        SingleLinkedList list = new SingleLinkedList();
+        list.push(17);
+        list.push(21);
+        list.push(23);
+        list.pop();
+        printList(list);
+    }
+
 
     private void printList(SingleLinkedList list) {
         System.out.print("[");

@@ -1,6 +1,6 @@
 package dataStructure.list.nodelist;
 
-public class SingleLinkedList  {
+public class SingleLinkedList {
     private Node head;
     private int size = 0;
 
@@ -26,15 +26,13 @@ public class SingleLinkedList  {
     }
 
     public Integer pop() {
-        Node x = head;
-        while (!isEmpty()) {
-            if (x.getNext() == null) {
-                Integer data = x.getData();
-                x = null;
-                return data;
-            }
-        }
-        throw new IllegalArgumentException("SingleLinkedList is empty");
+        if (isEmpty())
+            throw new IllegalArgumentException("SingleLinkedList is empty");
+
+        int data = head.getData();
+        head = head.getNext();
+
+        return data;
     }
 
     public Integer peek() {
