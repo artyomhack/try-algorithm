@@ -10,22 +10,6 @@ public class TestNodeList {
 
     @Test
     public void check_printNodes() {
-//        Node node1 = new Node(10, null);
-//        Node node2 = new Node(17, null);
-//        Node node3 = new Node(21, null);
-//
-//        Node[] nodes = {node1, node2, node3};
-//
-//        node1.setNext(node2);
-//        node2.setNext(node3);
-//
-//        Node pointer = nodes[0];
-//        System.out.println(pointer.getData());
-//        pointer = pointer.getNext();
-//        System.out.println(pointer.getData());
-//        pointer = pointer.getNext();
-//        System.out.println(pointer.getData());
-
         Node node1 = new Node(10, null);
         Node node2 = new Node(17, null);
         Node node3 = new Node(21, null);
@@ -40,6 +24,19 @@ public class TestNodeList {
         node1 = node1.getNext();
         System.out.println(node1.getData());
 
+    }
+
+    @Test
+    public void check_insert() {
+        SingleLinkedList list = new SingleLinkedList();
+
+        list.insert(0, 12);
+        list.insert(1,24);
+        list.insert(2,48);
+
+        System.out.println(list);
+
+        Assertions.assertEquals(3, list.size());
     }
 
     @Test
@@ -74,6 +71,32 @@ public class TestNodeList {
         Assertions.assertEquals(24, list.get(1));
         Assertions.assertEquals(48, list.get(2));
     }
+
+    @Test
+    public void check_removeByIndex() {
+        SingleLinkedList list = new SingleLinkedList();
+        list.addLast(12);
+        list.addLast(24);
+        list.addLast(48);
+        System.out.println(list);
+        list.remove(1);
+        System.out.println(list);
+
+        Assertions.assertEquals(2, list.size());
+    }
+
+    @Test
+    public  void check_removeFirst() {
+        SingleLinkedList list = new SingleLinkedList();
+        list.addLast(12);
+        list.addLast(24);
+        list.addLast(48);
+        System.out.println(list);
+        list.removeFirst();
+        System.out.println(list);
+        Assertions.assertEquals(2, list.size());
+    }
+
 
 
 }
