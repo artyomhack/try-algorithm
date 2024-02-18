@@ -1,14 +1,15 @@
-package dataStructure.list.linkedlist;
+package dataStructure.list.singleLinkedList;
 
 public class Node {
     private Integer data;
     private Node next;
-    private Node prev;
 
-    public Node(Integer data) {
+    public Node() {
+    }
+
+    public Node(Integer data, Node next) {
         this.data = data;
-        next = null;
-        prev = null;
+        this.next = next;
     }
 
     public Integer getData() {
@@ -25,13 +26,5 @@ public class Node {
 
     public void setNext(Node next) {
         this.next = next;
-    }
-
-    public Node getPrev() {
-        return prev;
-    }
-
-    public void setPrev(Node prev) {
-        this.prev = prev;
     }
 }

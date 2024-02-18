@@ -1,12 +1,12 @@
-package dataStructure.test.nodeList;
+package dataStructure.test.singleLinkedList;
 
-import dataStructure.list.nodelist.SingleLinkedList;
-import dataStructure.list.nodelist.Node;
+import dataStructure.list.singleLinkedList.SingleLinkedList;
+import dataStructure.list.singleLinkedList.Node;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 
-public class TestNodeList {
+public class TestSingleLinkedList {
 
     @Test
     public void check_printNodes() {

@@ -1,4 +1,4 @@
-package dataStructure.list.nodelist;
+package dataStructure.list.singleLinkedList;
 
 public class SingleLinkedList {
     private Node head;
