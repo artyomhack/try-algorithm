@@ -57,6 +57,12 @@ public class LinkedList {
 
         checkIndex(index);
 
+        if (index == 0)
+            return getFirst();
+
+        if (index == size() - 1)
+            return getLast();
+
         Node pointer;
         if (size / 2 > index) {
             pointer = head;
