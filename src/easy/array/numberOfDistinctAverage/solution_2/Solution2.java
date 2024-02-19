@@ -1,4 +1,4 @@
-package easy.numberOfDistinctAverage.solution_2;
+package easy.array.numberOfDistinctAverage.solution_2;
 
 /*
     You are given a 0-indexed integer array nums of even length.

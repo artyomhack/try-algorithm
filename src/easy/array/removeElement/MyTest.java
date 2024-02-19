@@ -1,6 +1,6 @@
-package easy.removeElement;
+package easy.array.removeElement;
 
-import easy.removeElement.solution1.Solution1;
+import easy.array.removeElement.solution1.Solution1;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;

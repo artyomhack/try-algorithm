@@ -1,4 +1,4 @@
-package easy.removeElement.solution1;
+package easy.array.removeElement.solution1;
 
 /*
     Given an integer array nums and an integer val, remove all occurrences of val in nums in-place.
@@ -12,10 +12,6 @@ package easy.removeElement.solution1;
     which are not equal to val. The remaining elements of nums are not important as well as the size of nums.
     Return k.
  */
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 
 public class Solution1 {
     public static int removeElement(int[] nums, int val) {

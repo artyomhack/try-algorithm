@@ -1,7 +1,4 @@
-package easy.removeDublicate.solution2;
-
-import java.util.Arrays;
-import java.util.HashSet;
+package easy.array.removeDublicate.solution2;
 
 /*
  Given an integer array nums sorted in non-decreasing order, remove the duplicates in-place such that

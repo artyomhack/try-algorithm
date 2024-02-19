@@ -1,7 +1,7 @@
-package easy.removeDublicate;
+package easy.array.removeDublicate;
 
-import easy.removeDublicate.solution1.Solution1;
-import easy.removeDublicate.solution2.Solution2;
+import easy.array.removeDublicate.solution1.Solution1;
+import easy.array.removeDublicate.solution2.Solution2;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;

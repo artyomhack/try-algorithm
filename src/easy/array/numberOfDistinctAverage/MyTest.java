@@ -1,7 +1,7 @@
-package easy.numberOfDistinctAverage;
+package easy.array.numberOfDistinctAverage;
 
-import easy.numberOfDistinctAverage.solution_1.Solution1;
-import easy.numberOfDistinctAverage.solution_2.Solution2;
+import easy.array.numberOfDistinctAverage.solution_1.Solution1;
+import easy.array.numberOfDistinctAverage.solution_2.Solution2;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;

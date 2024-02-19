@@ -1,7 +1,6 @@
-package easy.findTwoNumMakeSum;
+package easy.array.findTwoNumMakeSum;
 
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
 
 public class Solution {
 

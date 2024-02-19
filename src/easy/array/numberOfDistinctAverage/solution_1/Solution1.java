@@ -1,7 +1,4 @@
-package easy.numberOfDistinctAverage.solution_1;
-
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
+package easy.array.numberOfDistinctAverage.solution_1;
 
 import java.util.ArrayList;
 import java.util.Arrays;
