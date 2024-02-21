@@ -11,10 +11,10 @@ class Solution {
     public static ListNode mergeKLists(ListNode[] lists) {
         ListNode sortedHeadNode = new ListNode(0, null);
         ListNode sortedPointer = sortedHeadNode;
+        ListNode list1 = lists[0], list2 = null;
         int k = 1;
-        while (k <= lists.length - 1) {
-            ListNode list1 = lists[k-1];
-            ListNode list2 = lists[k++];
+        while (k < lists.length) {
+            list2 = lists[k];
             while (list1 != null && list2 != null) {
                 if (list1.val <= list2.val) {
                     sortedPointer.next = list1;
@@ -25,12 +25,13 @@ class Solution {
                 }
                 sortedPointer = sortedPointer.next; //переходит на новый узел
             }
-
-            if (list1 == null)
-                sortedPointer.next = list2;
-            else
-                sortedPointer.next = list1;
+            list1 = lists[k++];
         }
+
+        if (list1 == null)
+            sortedPointer.next = list2;
+        else
+            sortedPointer.next = list1;
 
         return sortedHeadNode.next;
     }

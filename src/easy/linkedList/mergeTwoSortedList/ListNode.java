@@ -27,7 +27,7 @@ class Solution {
 
         if (list1 == null)
             sortedPointer.next = list2;
-        else
+        if (list2 == null)
             sortedPointer.next = list1;
 
         return sortedHeadNode.next;
